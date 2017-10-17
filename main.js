@@ -1,4 +1,4 @@
-
+/*
 //Player One
 var score = 193;
 var last_play = "Q";
@@ -7,9 +7,9 @@ var has_ball = false;
 var is_in_tree = false;
 var crying = false;
 //final score: 332
+*/
 
 
-/*
 //Player Two
 var score = 394;
 var last_play = "W";
@@ -17,8 +17,8 @@ var broom = "none";
 var has_ball = true;
 var is_in_tree = true;
 var crying = false;
-//final score: 222
-*/
+//final score 419.5
+
 
 /*
 //Player Three
@@ -65,14 +65,15 @@ console.log('last play was ' + last_play + '. no change to score. \n score: ' + 
 
 // 4. A player gets an extra 395 points if they are in a tree, unless their last play was a number.
 
-if(typeof last_play === 'number') {
-  if(is_in_tree === true) {
-    console.log('player was in a tree and their last play was a number. score increased by 395. \n score: ' + score)
+if(is_in_tree === true) {
+  if(typeof last_play === 'number') {
+    console.log('player is in a tree but their last play was a number. score unchanged. \n score: ' + score)
   } else {
-    console.log('player was not in a tree. score unchanged. \n score: ' + score)
+    score = score + 395
+    console.log('player is in a tree and last play was not a number. score increased by 395. \n score: ' + score)
   }
 } else {
-  console.log('last play was a number but player was not in a tree. score unchanged. \n score: ' + score)
+  console.log('player was not in a tree. score unchanged. \n score: ' + score)
 }
 
 
