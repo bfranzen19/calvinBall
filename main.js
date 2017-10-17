@@ -1,4 +1,4 @@
-/*
+
 //Player One
 var score = 193;
 var last_play = "Q";
@@ -7,7 +7,7 @@ var has_ball = false;
 var is_in_tree = false;
 var crying = false;
 //final score: 332
-*/
+
 
 /*
 //Player Two
@@ -20,7 +20,7 @@ var crying = false;
 //final score: 222
 */
 
-
+/*
 //Player Three
 var score = "f";
 var last_play = 1.5
@@ -29,7 +29,7 @@ var has_ball = true;
 var is_in_tree = false;
 var crying = true;
 //final score: 900
-
+*/
 
 
 // 1. A player's score is equal to 500 if their score is not already a number. (this is implemented below).
